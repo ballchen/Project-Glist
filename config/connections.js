@@ -27,7 +27,7 @@ module.exports.connections = {
   mysql: {
     // username and password set in /config/local.js
     // but local.js is in gitignore setting
-     module: 'sails-mysql',
+    module: 'sails-mysql',
     host:'127.0.0.1',
     port:3306,
     database:'ballchendb',

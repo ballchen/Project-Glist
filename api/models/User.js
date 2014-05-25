@@ -6,9 +6,11 @@
 */
 
 module.exports = {
-
-  attributes: {
-
+  
+  connection: 'mongodb',
+	attributes: {
+	list:'string'   //JSON.stringify(arr)
+	
   }
 };
 
