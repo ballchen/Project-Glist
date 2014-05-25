@@ -6,11 +6,30 @@
 */
 
 module.exports = {
-  
-  connection: 'mongodb',
+		  
+	connection: 'mongodb',
+	tableName:'user',
+
 	attributes: {
-	list:'string'   //JSON.stringify(arr)
-	
+
+		name: 'string'
+		education: 'string',
+		email: 'string',
+		job:'string',
+		sex:'string',
+		friends: 'string',
+
+
+		elements:{
+			collection: 'element',
+			via: 'owner'
+		},
+
+		lists:{
+			collection: 'list',
+			via: 'owner'
+		}
+
   }
 };
 
